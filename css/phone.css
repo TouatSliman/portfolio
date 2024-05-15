@@ -1,0 +1,73 @@
+/*********** responsive **********/
+nav .fas {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .logo {
+    width: 110px;
+  }
+  body {
+    width: 100vw;
+  }
+  header {
+    font-size: 13px;
+  }
+  nav .fas {
+    display: block;
+    font-size: 25px;
+  }
+  nav ul {
+    background-color: #1e165b;
+    position: fixed;
+    top: -20px;
+    right: -250px;
+    width: 120px;
+    height: 150vh;
+    padding-top: 50px;
+    flex-direction: column;
+    z-index: 1;
+    transition: right 0.9s ease;
+  }
+  nav ul li {
+    display: block;
+    height: 60px;
+  }
+  nav ul .fas {
+    position: absolute;
+    top: 25px;
+    left: 0px;
+  }
+  #about .container {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  .about-col-1 img {
+    width: 140%;
+    margin-bottom: 20px;
+  }
+  .about-col-2 h1,
+  .footer-bottom p {
+    text-align: center;
+    width: 60vw;
+    padding: 0 20vw;
+  }
+  .tab-title {
+    width: 100vw;
+    justify-content: space-around;
+  }
+  .about-col-2 .tab-title p {
+    text-align: center;
+    width: fit-content;
+    padding: 0;
+  }
+  .Services-list a div {
+    text-align: center;
+  }
+  .tab-content ul {
+    padding: 0;
+  }
+  .footer-bottom p {
+    font-size: 12px;
+  }
+}

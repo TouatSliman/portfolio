@@ -1,0 +1,18 @@
+.Services-list-motion-false {
+  opacity: 0%;
+}
+
+.Services-list-motion-true {
+  animation: move 0.4s ease-out;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

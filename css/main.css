@@ -1,0 +1,328 @@
+/******** body ********/
+body {
+  background-color: rgb(0, 0, 27);
+  margin: 0;
+  color: #e2e2e2;
+}
+html {
+  scroll-behavior: smooth;
+}
+/******** fonts ********/
+.montserrat-title {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.center {
+  text-align: center;
+  color: #4b3daf;
+}
+body {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+/*********** navbar **********/
+nav {
+  background-image: linear-gradient(0deg, rgb(0, 0, 27), #4b3daf);
+  height: 67px;
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 span {
+  font-size: 2.9rem;
+}
+.nav-item {
+  list-style: none;
+  display: flex;
+}
+.nav-item li {
+  margin: 0 10px 0 0;
+  text-align: center;
+}
+.nav-item li a {
+  text-decoration: none;
+  color: #e2e2e2;
+  font-size: 1.1rem;
+  transition: color 0.4s ease;
+  position: relative;
+}
+nav ul li a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #e2e2e2;
+  position: absolute;
+  left: 0;
+  bottom: -1.5px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+.logo {
+  width: 160px;
+}
+/*********** head ***********/
+header {
+  padding: 10px 10%;
+}
+/*********** about **********/
+#about {
+  padding: 80px 0;
+  color: #4b3daf;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-col-1 {
+  flex-basis: 35%;
+}
+.about-col-1 img {
+  width: 80%;
+  border-radius: 100%;
+  transform: rotate(13deg);
+  margin-left: 100px;
+  border: 5px solid #4b3daf;
+}
+.about-col-2 {
+  flex-basis: 60%;
+}
+.subtitle {
+  font-weight: 16px;
+  font-weight: 600px;
+}
+.about-me {
+  color: #e2e2e2;
+  font-size: medium;
+}
+.tab-title {
+  display: flex;
+  justify-content: space-around;
+}
+.tab-links {
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 0 5px;
+  position: relative;
+}
+.tab-links::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #4b3daf;
+  position: absolute;
+  left: 0;
+  bottom: -1.5px;
+  transition: 0.5s;
+}
+.tab-links.active-link::after {
+  width: 50%;
+}
+.tab-content {
+  color: #e2e2e2;
+  font-size: 13px;
+}
+.tab-content ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+.tab-content ul li span {
+  color: rgb(99, 96, 96);
+  font-size: 14px;
+}
+.tab-content {
+  display: none;
+}
+.tab-content.active-tab {
+  display: block;
+}
+.contactleft p i {
+  font-size: 26px;
+  color: #4b3daf;
+  margin-right: 10px;
+}
+/********* services *********/
+#Services {
+  padding: 30px 0;
+}
+.Services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.Services-list a {
+  text-decoration: none;
+}
+.Services-list a div {
+  background-color: rgb(80, 79, 79);
+  color: whitesmoke;
+
+  padding: 40px;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background 0.5s, transform 0.5s;
+}
+.Services-list a div i {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.Services-list a div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+/*.Services-list a div {
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+        margin-top: 20px;
+        /*display: inline-block;
+      }**/
+.Services-list a div:hover {
+  background-color: #1e165b;
+  transform: translateY(-10px);
+}
+
+/*********** form ***********/
+form {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  text-align: center;
+  flex-direction: column;
+}
+#contact {
+  text-align: center;
+}
+#contact .container {
+  text-align: center;
+}
+#contact .container .row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+/*#contact .container .row .contactleft {
+        background-color: blueviolet;
+      }*/
+/*#contact .container .row .contactleft p {
+        color: brown;
+      }*/
+/*#contact .container .row .contactright {
+        text-align: center;
+      }*/
+#contact .container .row .contactright input {
+  width: 230px;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #4b3daf;
+  outline: none;
+  color: #e2e2e2;
+}
+#contact .container .row .contactright label {
+  width: 100%;
+  text-align: center;
+  font-size: 17px;
+  margin: 1rem 0;
+}
+#contact .container .row .contactright textarea {
+  width: 230px;
+  background-color: transparent;
+  border: 2px solid #4b3daf;
+  border-radius: 10px;
+  outline: none;
+  color: #e2e2e2;
+}
+.b {
+  background-color: #4b3daf;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+.b:hover {
+  background-color: #1e165b;
+  cursor: pointer;
+}
+/************* footer ***********/
+footer {
+  background-color: rgb(80, 79, 79);
+  height: auto;
+  width: 100%;
+  padding-top: 40px;
+  border-radius: 60px 0 0 0;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li {
+  margin: 0 20px 0 0;
+}
+.socials a {
+  text-decoration: none;
+  color: #e2e2e2;
+}
+.socials a i {
+  font-size: 1.1rem;
+  transition: color 0.4s ease;
+  transition: scale 0.4s ease;
+}
+.socials a:hover i {
+  color: black;
+  scale: 1.17;
+}
+.footer-bottom {
+  background-color: rgb(99, 96, 96);
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span {
+  color: #4b3daf;
+  font-weight: 300;
+  font-size: x-large;
+  font-weight: bolder;
+}
+hr {
+  border: 2px solid rgb(99, 96, 96);
+}

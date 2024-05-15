@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- SEO -->
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="My Personel Portfolio Click For More ..."
+    />
+    <meta name="theme-color" content="#4b3daf" />
+    <meta
+      name="keywords"
+      content="Touat sliman mustapha Portfolio touat Sliman Mustapha Devloper web programing programer Web Developer Graphic Designer Photographer UX/UI Designer Digital Artist Creative Problem Solver Passionate Illustrator Data Visualization Enthusiast Responsive Web Design E-Commerce Website Logo Redesign Mobile App Development Full Stack Developer Brand Identity"
+    />
+    <meta name="author" content="touat sliman mustapha" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- facebook -->
+    <meta property="og:title" content="Mustapha portfolio" />
+    <meta
+      property="og:description"
+      content="My Personel Portfolio Click For More ..."
+    />
+    <meta
+      property="og:image"
+      content="https://github.com/TouatSliman/html/blob/main/link_bg.png?raw=true"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:type" content="article" />
+    <!-- twitter -->
+    <meta name="twitter-card" content="summary_large_image" />
+    <meta name="twitter-title" content="Mustapha portfolio" />
+    <meta
+      name="twitter-description"
+      content="My Personel Portfolio Click For More ..."
+    />
+    <meta
+      name="twitter-image"
+      content="https://github.com/TouatSliman/html/blob/main/link_bg.png?raw=true"
+    />
+    <meta name="twitter-creator" content="@sliman_mustapha" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- title -->
+    <title>Portfolio</title>
+    <!-- icon -->
+    <link rel="shortcut icon" href="pic/favicon.png" type="image/x-icon" />
+    <!-- style -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/phone.css" />
+    <link rel="stylesheet" href="./css/motion.css" />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/2610c4262a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!------------- navbar ----------->
+    <nav>
+      <img
+        title="touat slimane mustapha"
+        class="logo"
+        src="pic/logo.png"
+        alt="logo"
+      />
+      <ul class="nav-item">
+        <li><a href="#about">About</a></li>
+        <li><a href="#Project">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fa-solid fa-caret-right fas" onclick="closemenu()"></i>
+      </ul>
+      <i class="fa-solid fa-caret-left fas" onclick="openmenu()"></i>
+    </nav>
+    <!------------- head ------------>
+    <header id="header">
+      <p title="lOOK WHAT I CAN DO">
+        <i class="fa-solid fa-code"></i> Devloper
+      </p>
+      <h1 class="montserrat-title">
+        Hi,I'm <span>M</span>ustapha <br />Sliman Touat
+      </h1>
+    </header>
+    <!------------- About ----------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1"><img src="pic/pic.png" alt="picture" /></div>
+          <div class="about-col-2">
+            <div class="tab-title">
+              <p class="tab-links active-link" onclick="opentab('Hobbies')">
+                Hobbies
+              </p>
+              <p class="tab-links" onclick="opentab('Skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-content" id="Skills">
+              <ul>
+                <li>
+                  <p>
+                    <span>Web development </span><br />Comprehensive
+                    understanding of web
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span>Developes</span><br />i make games and software as
+                    challenges to practice what i learn.
+                  </p>
+                </li>
+                <li>
+                  <p><span>Others</span><br />Photoshop, Powerpoint.</p>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content active-tab" id="Hobbies">
+              <ul>
+                <li>
+                  <p>
+                    <span>Gaming</span><br />i love playing games in the
+                    weekends
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span>Reading & Anime</span><br />Every day,Before sleep i
+                    read tow to five pages of an interesting books, manga or
+                    watch anime
+                  </p>
+                </li>
+                <li>
+                  <p><span>GYM</span><br />i love gym</p>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content" id="Education">
+              <ul>
+                <li>
+                  <p>
+                    <span>English</span><br />i have A2 certificate in english.
+                  </p>
+                </li>
+                <li>
+                  <p><span>Computer Since</span><br />license</p>
+                </li>
+                <li>
+                  <p>
+                    <span>BAC 2020-2021</span><br />Mathematics technician >>
+                    Electrical engineering <b>14.30</b>
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------- Services ---------->
+    <div id="Project">
+      <div class="container">
+        <div class="Services-list">
+          <a class="project" href="app.html">
+            <div class="center">
+              <i class="fa-brands fa-chrome"></i>
+              <h2>web Application</h2>
+              <h4>
+                creating a full web application with data base, or single
+                element page !
+              </h4>
+              <h5>Click for more ...</h5>
+            </div>
+          </a>
+          <a class="project" href="games.html">
+            <div class="center">
+              <i class="fa-solid fa-gamepad"></i>
+              <h2>Games</h2>
+              <h4>
+                download games and play <br />there is games for phone and pc
+              </h4>
+              <h5>Click for more ...</h5>
+            </div>
+          </a>
+          <a class="project" href="software.html">
+            <div class="center">
+              <i class="fa-solid fa-database"></i>
+              <h2>Software</h2>
+
+              <h4>here is any project not game<br />like models and arts</h4>
+
+              <h5>Click for more ...</h5>
+            </div>
+          </a>
+
+          <!--<div>
+            <i class="fa-solid fa-network-wired"></i>
+            <h2>Network</h2>
+            <p>working on it</p>
+            <a href="">learn more ...</a>
+          </div>!-->
+        </div>
+      </div>
+    </div>
+    <!----------- Message ----------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contactleft">
+            <h1 class="subtitle center">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>
+              touat.mustapha001@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i> (+213)793047832</p>
+            <a href="document.pdf" download
+              ><button type="button" class="b">Download Cv</button></a
+            >
+          </div>
+          <div class="contactright">
+            <form name="submit-to-google-sheet" method="post">
+              <label for="email">Email</label>
+              <input
+                required
+                id="email"
+                type="email"
+                name="email"
+                placeholder="your email"
+              />
+              <label for="text">Message</label>
+              <textarea
+                required
+                name="text"
+                id="text"
+                cols="30"
+                rows="10"
+                placeholder="your message ..."
+              ></textarea>
+              <button class="b" type="submit">send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------ footer ------------>
+    <footer>
+      <div class="footer-content">
+        <h3 class="montserrat-title">touat sliman mustapha</h3>
+        <p>
+          Build your dreams or someone else will hire you to build
+          theirs.Believe in yourself and anything is possible.
+        </p>
+        <ul class="socials">
+          <li>
+            <a
+              href="https://github.com/TouatSliman"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://touatsliman.github.io/html/hack"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-solid fa-paperclip"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/vivela.vie.967806"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/mustapha_touat?igsh=bm00dno4eWc0cmM3"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/@t.s.m.000"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/touat-sliman-mustapha-945426285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="http://x.com/sliman_mustapha"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <div class="footer-bottom">
+        <p>Copyright &copy; 2024 <span>M</span>ustapha. Designed By Me ❤️</p>
+      </div>
+    </footer>
+    <!-- javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
