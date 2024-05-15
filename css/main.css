@@ -87,7 +87,6 @@ header {
 .about-col-1 img {
   width: 80%;
   border-radius: 100%;
-  transform: rotate(13deg);
   margin-left: 100px;
   border: 5px solid #4b3daf;
 }
