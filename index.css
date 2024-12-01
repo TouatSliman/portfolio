@@ -173,8 +173,8 @@ main {
 #project div a img {
   width: 100%;
   height: fit-content;
-  object-fit:contain;
-  transition: transform ease 0.3s;
+  object-fit: contain;
+  transition: transform ease 0.3s 0.6s;
 }
 #project div a p {
   position: absolute;
@@ -182,10 +182,12 @@ main {
   left: 0;
   right: 0;
   padding: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 1)
+  );
   backdrop-filter: blur(5px);
-  height: 100%;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -193,13 +195,16 @@ main {
   font-weight: 400;
   font-size: 1rem;
   margin: 0;
-  opacity: 0;
-  transition: opacity ease 0.3s;
+  height: 1rem;
+  -moz-transition: height 0.6s ease;
+  -webkit-transition: height 0.6s ease;
+  -o-transition: height 0.6s ease;
+  transition: height 0.6s ease;
 }
 #project div a:hover img {
   transform: scale(1.1);
 }
 
 #project div a:hover p {
-  opacity: 1;
+  height: 100%;
 }
