@@ -162,7 +162,7 @@ main {
 }
 #project div a {
   width: 370px;
-  height: 179px;
+  height: fit-content;
   border-radius: 3px;
   box-shadow: 0 0 10px rgba(68, 67, 70, 0.5);
   border: 1px solid #e2e2e2;
