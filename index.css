@@ -238,79 +238,151 @@ main {
   filter: grayscale(0);
 }
 /* project */
-#project {
-  padding: 5rem 0;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-#project h2 {
-  color: #272626;
-  font-weight: 800;
-  font-size: 2rem;
-  margin: 3rem 0;
-  padding: 0;
-  line-height: 1;
-  text-align: center;
-}
-#project div {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  background-image: url("pic/shape.png");
-  background-size: contain;
-  background-position: end;
-  background-repeat: no-repeat;
-}
-#project div a {
-  width: 370px;
-  height: fit-content;
-  border-radius: 3px;
-  box-shadow: 0 0 10px rgba(68, 67, 70, 0.5);
+
+.go-right {
+  width: 120px;
+  height: 432px;
+  padding: 0 16px;
   border: 1px solid #e2e2e2;
-  overflow: hidden;
-  position: relative;
-  cursor: pointer;
-}
-#project div a img {
-  width: 100%;
-  height: fit-content;
-  object-fit: contain;
-  transition: transform ease 0.3s 0.6s;
-}
-#project div a p {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 0.5rem;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 1)
-  );
-  backdrop-filter: blur(5px);
+  border-radius: 16px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  color: #fff;
-  font-weight: 400;
-  font-size: 1rem;
-  margin: 0;
-  height: 1rem;
-  -moz-transition: height 0.6s ease;
-  -webkit-transition: height 0.6s ease;
-  -o-transition: height 0.6s ease;
-  transition: height 0.6s ease;
+  align-items: center;
 }
-#project div a:hover img {
-  transform: scale(1.1);
+.go-right div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #27262680;
+  padding: 1rem;
+}
+.go-right div i::before {
+  color: #e2e2e2;
+  width: 46px;
+  height: 46px;
 }
 
-#project div a:hover p {
+.projects {
+  margin: 2rem 0;
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+  flex-wrap: nowrap;
+  padding: 0 1rem;
+  scroll-snap-align: start;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: auto;
+}
+.projects .container {
+  position: relative;
+  width: 300px;
+  min-width: 300px;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  border: 1px solid #e2e2e2;
+  padding: 1rem;
+  border-radius: 16px;
+  transition: transform ease 0.3s;
+}
+.projects .container img {
+  padding: 0.5rem 0;
+  width: 100%;
+  height: 200px;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.projects .container .title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+}
+.projects .container .description {
+  color: #73767a;
+  margin: 0.5rem 0;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
   height: 100%;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-align: start;
+}
+.projects .container a {
+  height: 2rem;
+  text-decoration: none;
+  color: #2b8eff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+}
+.projects .container a i {
+  margin-left: 0.5rem;
+}
+.projects .container a:hover {
+  text-decoration: underline;
+}
+.projects .tools {
+  position: absolute;
+  display: flex;
+  gap: 0.5rem;
+  top: 0.5rem;
+  left: 0.5rem;
+}
+.projects .tools div {
+  z-index: 1;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  background-origin: content-box;
+  background-color: #8d8d8d80;
+  border-radius: 50%;
+}
+.projects .tools .react {
+  background-image: url(pic/react.png);
+}
+.projects .tools .tailwind {
+  background-image: url(pic/tailwind.png);
+}
+.projects .tools .next {
+  background-image: url(pic/next.png);
 }
 .hidden {
   display: none !important;
+}
+
+@media screen and (max-width: 1000px) {
+  #header img {
+    width: 200px;
+    height: 200px;
+  }
+  #header h1 {
+    font-size: 2rem;
+  }
+  #header h2 {
+    font-size: 1.5rem;
+  }
+  #header h3 {
+    font-size: 1.2rem;
+  }
+  #header p {
+    font-size: 1rem;
+  }
 }

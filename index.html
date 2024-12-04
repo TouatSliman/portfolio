@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
     <title>Welcome 👋</title>
   </head>
   <body class="parkinsans-400">
@@ -29,22 +32,43 @@
       <section id="contact" class="hidden">
         <form action="https://api.web3forms.com/submit" method="POST">
           <i id="close" class="fa-solid fa-xmark"></i>
-          <input type="hidden" name="access_key" value="2649692f-a880-407c-8f98-5ac807127fcf">
+          <input
+            type="hidden"
+            name="access_key"
+            value="2649692f-a880-407c-8f98-5ac807127fcf"
+          />
           <div>
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Type your name here" required />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Type your name here"
+              required
+            />
           </div>
           <div>
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Type your email here" required />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Type your email here"
+              required
+            />
           </div>
           <div>
             <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Type your message here" required></textarea>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Type your message here"
+              required
+            ></textarea>
           </div>
           <label>
-            <input type="checkbox" name="botcheck" >
-            don't check this box  🤖
+            <input type="checkbox" name="botcheck" />
+            don't check this box 🤖
           </label>
           <button type="submit" id="contact-submit">Submit</button>
         </form>
@@ -55,30 +79,103 @@
           <p>a web developer &lt;/&gt;</p>
         </div>
         <div>
-          <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg" alt="profile" />
+          <img
+            src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg"
+            alt="profile"
+          />
         </div>
       </section>
-      <section class="slider" style="--width: 70px; --height: 70px ; --quantity: 6">
+      <section
+        class="slider"
+        style="--width: 70px; --height: 70px; --quantity: 6"
+      >
         <div class="list">
-          <div class="item" style="--position: 1"><img src="pic/react.png" alt="1" draggable="false" title="react js"></div>
-          <div class="item" style="--position: 2"><img src="pic/css.png" alt="2" draggable="false" title="css"></div>
-          <div class="item" style="--position: 3"><img src="pic/js.png" alt="3" draggable="false" title="java script"></div>
-          <div class="item" style="--position: 4"><img src="pic/git.png" alt="4" draggable="false" title="git and version control"></div>
-          <div class="item" style="--position: 5"><img src="pic/mysql.png" alt="5" draggable="false" title="my sql database"></div>
-          <div class="item" style="--position: 6"><img src="pic/php.png" alt="6" draggable="false" title="php"></div>
+          <div class="item" style="--position: 1">
+            <img
+              src="pic/react.png"
+              alt="1"
+              draggable="false"
+              title="react js"
+            />
+          </div>
+          <div class="item" style="--position: 2">
+            <img src="pic/css.png" alt="2" draggable="false" title="css" />
+          </div>
+          <div class="item" style="--position: 3">
+            <img
+              src="pic/js.png"
+              alt="3"
+              draggable="false"
+              title="java script"
+            />
+          </div>
+          <div class="item" style="--position: 4">
+            <img
+              src="pic/git.png"
+              alt="4"
+              draggable="false"
+              title="git and version control"
+            />
+          </div>
+          <div class="item" style="--position: 5">
+            <img
+              src="pic/tailwind.png"
+              alt="5"
+              draggable="false"
+              title="tailwind css"
+            />
+          </div>
+          <div class="item" style="--position: 6">
+            <img
+              src="pic/github.png"
+              alt="6"
+              draggable="false"
+              title="github"
+            />
+          </div>
         </div>
       </section>
-      <sectionn id="project">
-        <h2>Projects</h2>
-        <div>
-          <a href="https://touatsliman.github.io/online-education" target="_blank">
-            <img src="pic/oe.png" alt="online education">
-            <p>Online Education</p>
-          </a>
-          <a href="https://dzbest-94f5f.web.app" target="_blank">
-            <img src="pic/dzb.png" alt="online education">
-            <p>Dz Best</p>
-          </a>
+      <section id="project">
+        <div class="projects">
+          <div class="go-right">
+            <div>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="container">
+            <div class="tools">
+              <div class="react"></div>
+              <div class="tailwind"></div>
+            </div>
+            <img src="pic/oe.png" alt="online education" />
+            <p class="title">Online Education</p>
+            <p class="description">
+              Online Education is an application for online education in
+              different fields
+            </p>
+            <a
+              href="https://touatsliman.github.io/online-education"
+              target="_blank"
+              >live demo <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+
+          <div class="container">
+            <div class="tools">
+              <div class="next"></div>
+              <div class="tailwind"></div>
+            </div>
+            <img src="pic/dzb.png" alt="online education" />
+            <p class="title">Dz Best</p>
+            <p class="description">
+              Dz Best is an online application for trailers of trending movies
+              on netflix and over all the world popular movies the trailers are
+              available on youtube
+            </p>
+            <a href="https://dzbest-94f5f.web.app" target="_blank"
+              >live demo <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
         </div>
       </section>
     </main>
