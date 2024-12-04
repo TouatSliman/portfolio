@@ -20,12 +20,35 @@
             ></a>
           </li>
           <li>
-            <a href="mailto:touat_mustapha@outlook.com"><i class="fa-solid fa-envelope"></i></a>
+            <a id="contact-link"><i class="fa-solid fa-envelope"></i></a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
+      <section id="contact" class="hidden">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <i id="close" class="fa-solid fa-xmark"></i>
+          <input type="hidden" name="access_key" value="2649692f-a880-407c-8f98-5ac807127fcf">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Type your name here" required />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Type your email here" required />
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Type your message here" required></textarea>
+          </div>
+          <label>
+            <input type="checkbox" name="botcheck" >
+            don't check this box  🤖
+          </label>
+          <button type="submit" id="contact-submit">Submit</button>
+        </form>
+      </section>
       <section id="header">
         <div>
           <h1>hey I'm <span class="name">Sliman</span> ✌️</h1>
