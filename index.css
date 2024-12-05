@@ -84,7 +84,6 @@ main {
     0 0 30px rgba(173, 65, 245, 0.5), 0 0 40px rgba(173, 65, 245, 0.5),
     0 0 50px rgba(173, 65, 245, 0.5), 0 0 60px rgba(173, 65, 245, 0.5);
 }
-
 /* contact */
 #contact {
   position: fixed;
@@ -151,22 +150,23 @@ main {
   outline: none;
 }
 #contact form div input:invalid:not(:placeholder-shown),
-#contact form div textarea:invalid:not(:placeholder-shown) {
-  border: 1px solid red;
-  background-image: url("pic/checked_red.png");
+#contact form div textarea:invalid:not(:placeholder-shown),
+#contact form div input:valid:not(:placeholder-shown),
+#contact form div textarea:valid:not(:placeholder-shown) {
   background-repeat: no-repeat;
   background-position: right;
   background-size: 24px;
   background-origin: content-box;
 }
+#contact form div input:invalid:not(:placeholder-shown),
+#contact form div textarea:invalid:not(:placeholder-shown) {
+  border: 1px solid red;
+  background-image: url("pic/checked_red.png");
+}
 #contact form div input:valid:not(:placeholder-shown),
 #contact form div textarea:valid:not(:placeholder-shown) {
   border: 1px solid green;
   background-image: url("pic/checked_green.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 24px;
-  background-origin: content-box;
 }
 #contact form button {
   padding: 0.5rem;
@@ -262,7 +262,6 @@ main {
   width: 46px;
   height: 46px;
 }
-
 .projects {
   margin: 2rem 0;
   display: flex;
@@ -280,6 +279,12 @@ main {
   -ms-overflow-style: none;
   -webkit-overflow-scrolling: touch;
   -webkit-overflow-scrolling: auto;
+}
+#project h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
 }
 .projects .container {
   position: relative;
@@ -369,22 +374,51 @@ main {
 }
 
 @media screen and (max-width: 1000px) {
+  main {
+    padding: 1rem 0.5rem;
+  }
   #header img {
     margin: 1.2rem 0;
     width: 200px;
     height: 200px;
   }
-  #header h1 {
-    font-size: 1.7rem;
-    margin: 0.2rem 0;
+  h1 {
+    font-size: 1.5rem;
+    margin-top: 4rem;
+    margin-bottom: 0.5rem;
   }
-  #header h2 {
-    font-size: 1.2rem;
+  h2 {
+    font-size: 1.2rem !important;
+    margin: 0.2rem 0;
   }
   #header h3 {
     font-size: 1rem;
   }
   #header p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
+    margin-bottom: 1rem;
+  }
+  .projects {
+    margin-top: 3rem;
+  }
+  .go-right {
+    display: none;
+  }
+  .projects .container {
+    width: 200px;
+    min-width: 200px;
+    height: 300px;
+  }
+  .projects .container img {
+    height: 150px;
+  }
+  .projects .container .title {
+    font-size: 1rem;
+  }
+  .projects .container .description {
+    font-size: 0.8rem;
+  }
+  .projects .container a {
+    font-size: 1rem;
   }
 }
