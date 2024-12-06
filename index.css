@@ -400,6 +400,7 @@ main {
   }
   .projects {
     margin-top: 3rem;
+    padding: 0;
   }
   .go-right {
     display: none;
