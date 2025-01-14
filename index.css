@@ -12,7 +12,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 header nav {
   position: fixed;
@@ -49,8 +49,25 @@ header nav ul li a:active {
 /* main */
 main {
   color: black;
-  padding: 1rem 2rem;
+  padding: 0 2rem;
 }
+#header {
+  column-count: 3;
+}
+#header img {
+  width: 100%;
+  margin-bottom: 1em;
+  border-radius: 5px;
+}
+#header div {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+}
+/*
 #header {
   padding: 3rem 0;
   display: flex;
@@ -377,6 +394,7 @@ main {
   main {
     padding: 1rem 0.5rem;
   }
+  /*
   #header img {
     margin: 1.2rem 0;
     width: 200px;
@@ -387,16 +405,17 @@ main {
     margin-top: 4rem;
     margin-bottom: 0.5rem;
   }
-  h2 {
-    font-size: 1.2rem !important;
-    margin: 0.2rem 0;
-  }
+  
   #header h3 {
     font-size: 1rem;
   }
   #header p {
     font-size: 0.7rem !important;
     margin-bottom: 1rem;
+  }*/
+  #header div {
+    font-size: 0.9rem !important;
+    height: 100px;
   }
   .projects {
     margin-top: 3rem;
