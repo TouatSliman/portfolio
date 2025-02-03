@@ -52,20 +52,28 @@ main {
   padding: 0 2rem;
 }
 #header {
-  column-count: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 6rem;
+  margin-bottom: 3rem;
 }
 #header img {
-  width: 100%;
-  margin-bottom: 1em;
-  border-radius: 5px;
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
 }
-#header div {
-  height: 200px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#header .title {
+  text-align: center;
+  font-weight: 600;
+  color: #272626;
   font-size: 1.7rem;
+  margin: 15px auto;
+  padding: 0;
+  line-height: 1.2;
 }
 /*
 #header {
