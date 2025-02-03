@@ -402,13 +402,12 @@ main {
   main {
     padding: 1rem 0.5rem;
   }
-  /*
-  #header img {
+  #header .profile {
     margin: 1.2rem 0;
     width: 200px;
     height: 200px;
   }
-  #header h1 {
+  #header .title {
     font-size: 1.5rem;
     margin-top: 4rem;
     margin-bottom: 0.5rem;
@@ -420,7 +419,7 @@ main {
   #header p {
     font-size: 0.7rem !important;
     margin-bottom: 1rem;
-  }*/
+  }
   #header div {
     font-size: 0.9rem !important;
     height: 100px;
